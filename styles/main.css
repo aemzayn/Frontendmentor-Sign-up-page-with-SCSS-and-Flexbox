@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  padding: 0 200px;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ff7a7a;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .left {
+  color: white;
+  padding-right: 50px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+body .left h1 {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+body .left h5 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+body .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+body .right .blue {
+  width: 100%;
+  background-color: #6055a5;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 1em 0;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+body .right .blue span {
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+body .right form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 7px;
+  padding: 50px;
+  background-color: white;
+  -webkit-box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+body .right form input, body .right form button {
+  margin: 10px 0;
+}
+
+body .right form input {
+  padding: 15px 20px;
+  border-radius: 4px;
+  border: 1px solid #dbdbe6;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+body .right form input[name="first-name"] {
+  margin-top: 0;
+}
+
+body .right form input::-webkit-input-placeholder {
+  color: rgba(62, 60, 73, 0.8);
+}
+
+body .right form input:-ms-input-placeholder {
+  color: rgba(62, 60, 73, 0.8);
+}
+
+body .right form input::-ms-input-placeholder {
+  color: rgba(62, 60, 73, 0.8);
+}
+
+body .right form input::placeholder {
+  color: rgba(62, 60, 73, 0.8);
+}
+
+body .right form input:hover, body .right form input:focus {
+  color: #3e3c49;
+  border-color: #3e3c49;
+}
+
+body .right form button {
+  padding: 15px 20px;
+  border-radius: 7px;
+  border: 1px solid #b9b6d3;
+  background-color: #38cc8c;
+  color: white;
+  -webkit-box-shadow: 0px 4px 0px 0px rgba(44, 150, 104, 0.8);
+          box-shadow: 0px 4px 0px 0px rgba(44, 150, 104, 0.8);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+body .right form button:hover {
+  cursor: pointer;
+}
+
+body .right form p {
+  text-align: center;
+  font-size: 15px;
+  color: #b9b6d3;
+  margin-top: 5px;
+}
+
+body .right form p a {
+  text-decoration: none;
+  color: #ff7a7a;
+}
+
+@media only screen and (max-width: 1440px) {
+  body .left h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  body .left h5 {
+    font-size: 16px;
+  }
+  body .right form p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 25px;
+  }
+  body .left {
+    padding: 75px 0 60px;
+    margin: auto;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .left h1 {
+    font-size: 24px;
+    padding: 0 7px;
+  }
+  body .left h5 {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+  body .right {
+    margin-bottom: 70px;
+  }
+  body .right .blue {
+    padding: 2em 0;
+    font-size: 14px;
+  }
+  body .right .blue span {
+    font-weight: 600;
+  }
+  body .right form {
+    padding: 20px;
+  }
+  body .right form button {
+    padding: 17px 20px;
+  }
+  body .right form p {
+    font-size: 11px;
+  }
+  body .right form p a {
+    font-weight: 700;
+  }
+}
+/*# sourceMappingURL=main.css.map */
